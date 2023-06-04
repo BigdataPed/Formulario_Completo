@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/">
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <div>
+                <label for="Nome">Nome</label>
+            </div>
+                <input id="Nome" type="text" placeholder=" Insira seu nome aqui..." name="Nome" required >
+            <div>
+                <br>
+                <label for="Email">Email</label>
+            </div>
+                <input id="Email" type="Email" placeholder="Insira seu email aqui..." name="Email" required>
+
+            <div>
+                <br>
+                <label for="Descrição">O que te motivou a participar do evento?</label>
+            </div>
+             <section>
+             <textarea  placeholder="Descreva aqui..." name="descricao" maxlength="300" id="Descrição" cols="30" rows="10"></textarea> 
+            </section>
+            <br>
+             <section>
+                <label for="">Selecione seu Módulo</label><br>
+                <select name="Módulo" id="">
+                    <option  disabled selected >Selecione uma opção...</option>
+                    <option value="dez">10</option>
+                    <option value="doze">12</option>
+                    <option value="quat">14</option>
+                    <option value="deze">16</option>
+                    <option value="dezo">18</option>
+                </select>                
+            </section>
+            <br>
+             <div>
+                <label for="Senha">Senha</label>
+            </div>
+                <input type="password" name="Senha" id="Senha" placeholder="Crie uma senha" required>
+            <div>
+                <br>
+                <label for="Confirmar senha">Confirmar senha</label>
+            </div>
+                <input type="password" name="Confirmar senha" id="confirmar senha" placeholder="Confirmar a senha" required>
+                <section>
+                    <p>Deseja receber novidades em seu email?</p>
+                    <label for="Sim">Sim</label>
+                    <input id="Sim" type="radio" value="Sim" name="novidades">
+                    <label for="Não">Não</label>
+                    <input id="Não"  type="radio" value="Não" name="novidades">                    
+                </section>
+                <br>
+                <input type="submit" value="Cadastrar">
+        </fieldset>
+    </form>
+</body>
+</html>
